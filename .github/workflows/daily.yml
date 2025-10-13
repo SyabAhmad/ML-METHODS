@@ -3,8 +3,8 @@ name: LOVE MENTEE Daily Commit
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at 00:00 UTC
-  workflow_dispatch:     # Allows manual trigger
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   love-mentee:
@@ -16,6 +16,11 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
+      - name: Configure Git identity
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -23,11 +28,6 @@ jobs:
 
       - name: Run pixel day commit script
         run: python commit_if_pixel_day.py
-
-      - name: Configure Git identity
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
 
       - name: Push changes
         run: git push
