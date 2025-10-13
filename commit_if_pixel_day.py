@@ -22,14 +22,14 @@ print(f"🎉 {TODAY} is a LOVE MENTEE day!")
 
 # Read methods
 if not os.path.exists("ml_methods.txt"):
-    print("❌ methods.txt not found!")
+    print("❌ ml_methods.txt not found!")
     exit(1)
 
-with open("methods.txt", "r") as f:
+with open("ml_methods.txt", "r") as f:
     all_methods = [line.strip() for line in f if line.strip()]
 
 if not all_methods:
-    print("❌ methods.txt is empty!")
+    print("❌ ml_methods.txt is empty!")
     exit(1)
 
 # Take up to 12
@@ -46,7 +46,7 @@ for i, method in enumerate(methods_to_use, 1):
     subprocess.run(["git", "commit", "-m", f"Add: {method} ({i}/{len(methods_to_use)})"], check=True)
 
 # Save remaining methods
-with open("methods.txt", "w") as f:
+with open("ml_methods.txt", "w") as f:
     for m in remaining:
         f.write(m + "\n")
 
