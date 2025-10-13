@@ -2,3 +2,7 @@
 
 #Ignore vscode AI rules
 .github\instructions\codacy.instructions.md
+
+love_mentee_manual.py
+generate_future_pixel_days.py
+verify_pixel_days.py

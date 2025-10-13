@@ -1,4 +1,4 @@
-# generate_future_pixel_days.py
+# generate_pixel_days.py
 from datetime import datetime, timedelta
 import json
 
@@ -26,7 +26,7 @@ for i, char in enumerate(WORD.upper()):
         for row in range(7):
             grid[row].append(0)
 
-# Generate all pixel days (future)
+# Generate dates
 pixel_days = []
 for week in range(len(grid[0])):
     for day in range(7):
@@ -38,6 +38,4 @@ for week in range(len(grid[0])):
 with open("pixel_days.json", "w") as f:
     json.dump(sorted(set(pixel_days)), f, indent=2)
 
-print(f"✅ Generated {len(set(pixel_days))} future pixel days")
-print("First few:", sorted(set(pixel_days))[:5])
-print("Last few: ", sorted(set(pixel_days))[-5:])
+print(f"✅ Generated {len(set(pixel_days))} dates (Oct 2025 → Sep 2026)")
