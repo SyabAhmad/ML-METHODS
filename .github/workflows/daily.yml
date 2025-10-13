@@ -1,5 +1,5 @@
 # .github/workflows/daily.yml
-name: LOVE MENTEE Daily Commit
+name: MENTEE Daily Commit
 
 on:
   schedule:
@@ -10,7 +10,7 @@ permissions:
   contents: write  # Required to push commits
 
 jobs:
-  love-mentee:
+  mentee:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo

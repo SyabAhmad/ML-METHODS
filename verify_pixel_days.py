@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 # ===== CONFIG =====
 START_DATE = datetime(2025, 10, 13)  # Must match what you used to generate pixel_days.json
-WORD = "LOVE MENTEE"
+WORD = "MENTEE"
 
 # Original font (must match your generation script)
 FONT = {
@@ -102,10 +102,10 @@ def main():
 
     # Compare
     if grids_equal(expected_grid, reconstructed_grid):
-        print("\n🎉 VALIDATION PASSED! Your pixel_days.json matches 'LOVE MENTEE' exactly.")
+        print("\n🎉 VALIDATION PASSED! Your pixel_days.json matches 'MENTEE' exactly.")
     else:
         print("\n❌ VALIDATION FAILED! Mismatch detected.")
-        print_grid(expected_grid, "Expected Grid (LOVE MENTEE):")
+        print_grid(expected_grid, "Expected Grid (MENTEE):")
         print_grid(reconstructed_grid, "Reconstructed Grid (from dates):")
         return
 

@@ -15,10 +15,10 @@ with open("pixel_days.json") as f:
     pixel_days = set(json.load(f))
 
 if TODAY not in pixel_days:
-    print(f"📅 {TODAY} is not a LOVE MENTEE day. Skipping.")
+    print(f"📅 {TODAY} is not a MENTEE day. Skipping.")
     exit(0)
 
-print(f"🎉 {TODAY} is a LOVE MENTEE day!")
+print(f"🎉 {TODAY} is a MENTEE day!")
 
 # Read methods
 if not os.path.exists("ml_methods.txt"):

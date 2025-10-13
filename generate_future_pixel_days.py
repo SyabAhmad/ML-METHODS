@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import json
 
 START_DATE = datetime(2025, 10, 13)  # Monday, Oct 13, 2025
-WORD = "LOVE MENTEE"
+WORD = "MENTEE"
 
 FONT = {
     'L': [[1,0,0,0,0],[1,0,0,0,0],[1,0,0,0,0],[1,0,0,0,0],[1,0,0,0,0],[1,0,0,0,0],[1,1,1,1,1]],
@@ -38,4 +38,4 @@ for week in range(len(grid[0])):
 with open("pixel_days.json", "w") as f:
     json.dump(sorted(set(pixel_days)), f, indent=2)
 
-print(f"✅ Generated {len(set(pixel_days))} dates (Oct 2025 → Sep 2026)")
+print(f"✅ Generated {len(set(pixel_days))} dates for MENTEE")
