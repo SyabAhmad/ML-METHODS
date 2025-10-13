@@ -1,2 +1,14 @@
 2025-10-13T12:43:13+05:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.358.sha.7cb05d0 (7cb05d0) built at 2025-09-19T09:27:42Z
 2025-10-13T12:43:13+05:00 [INFO] (codacy-cli-v2/cli-v2.go:55) No configuration file was found, execute init command first.
+2025-10-13T13:02:52+05:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.358.sha.7cb05d0 (7cb05d0) built at 2025-09-19T09:27:42Z
+2025-10-13T13:02:52+05:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[] command=init full_command=[/home/mentee/.cache/codacy/codacy-cli-v2/1.0.0-main.358.sha.7cb05d0/codacy-cli-v2 init]
+2025-10-13T13:03:09+05:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.358.sha.7cb05d0 (7cb05d0) built at 2025-09-19T09:27:42Z
+2025-10-13T13:03:10+05:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/mentee/.cache/codacy/codacy-cli-v2/1.0.0-main.358.sha.7cb05d0/codacy-cli-v2 analyze /mnt/h/Code/MENTEE/ GITHUB/ CONTRIBUTION/ML-METHODS/.github/workflows/daily.yml --format sarif] args=[/mnt/h/Code/MENTEE/ GITHUB/ CONTRIBUTION/ML-METHODS/.github/workflows/daily.yml]
+2025-10-13T13:03:10+05:00 [ERROR] (codacy-cli-v2/cmd/analyze.go:449) Analysis failed because path does not exist path=GITHUB/
+2025-10-13T13:03:21+05:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.358.sha.7cb05d0 (7cb05d0) built at 2025-09-19T09:27:42Z
+2025-10-13T13:03:21+05:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/mentee/.cache/codacy/codacy-cli-v2/1.0.0-main.358.sha.7cb05d0/codacy-cli-v2 install] args=[] command=install
+2025-10-13T13:03:21+05:00 [INFO] (codacy-cli-v2/cmd/install.go:72) All components are already installed
+2025-10-13T13:03:21+05:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.358.sha.7cb05d0 (7cb05d0) built at 2025-09-19T09:27:42Z
+2025-10-13T13:03:28+05:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.358.sha.7cb05d0 (7cb05d0) built at 2025-09-19T09:27:42Z
+2025-10-13T13:03:28+05:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/mentee/.cache/codacy/codacy-cli-v2/1.0.0-main.358.sha.7cb05d0/codacy-cli-v2 analyze /mnt/h/Code/MENTEE/ GITHUB/ CONTRIBUTION/ML-METHODS/.codacy/tools-configs/trivy.yaml --format sarif] args=[/mnt/h/Code/MENTEE/ GITHUB/ CONTRIBUTION/ML-METHODS/.codacy/tools-configs/trivy.yaml]
+2025-10-13T13:03:28+05:00 [ERROR] (codacy-cli-v2/cmd/analyze.go:449) Analysis failed because path does not exist path=GITHUB/
