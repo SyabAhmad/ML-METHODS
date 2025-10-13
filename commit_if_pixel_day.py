@@ -21,7 +21,7 @@ if TODAY not in pixel_days:
 print(f"🎉 {TODAY} is a LOVE MENTEE day!")
 
 # Read methods
-if not os.path.exists("methods.txt"):
+if not os.path.exists("ml_methods.txt"):
     print("❌ methods.txt not found!")
     exit(1)
 
