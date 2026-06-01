@@ -1164,3 +1164,4 @@
 2026-05-31: Support Vector Regression
 2026-06-01: Linear Regression
 2026-06-01: Ridge Regression
+2026-06-01: Lasso Regression
